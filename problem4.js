@@ -13,7 +13,9 @@ function isPalindrome(val) {
     }
 
     console.log(val === reverseEl);
-    
 }
 
 isPalindrome("racecar");
+isPalindrome("hello");
+isPalindrome("rotator");
+isPalindrome("peep");
