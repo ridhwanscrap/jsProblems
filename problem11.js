@@ -4,14 +4,19 @@
 // Input: [1, 2, 3, 5, 6, 7, 8]
 // Output: 4
 
+
+
+
 function findMissingNumber(arr) {
-    for (let i = 1; i <= arr.length + 1; i++) {
-        if (!arr.includes(i)) {
-            return i;
+    let missingNum = "No Missing Number";
+    for (let i = 0; i < input.arr; i++) {
+        if (arr[i] !== i + 1) {
+            missingNum = i + 1;
         }
     }
-    return "No missing number";
+    console.log(missingNum);
+    return missingNum;
 }
+findMissingNumber([1, 2, 3, 5, 6, 7, 8]);
 
-console.log(findMissingNumber([1, 2, 3, 5, 6, 7, 8]));
-console.log(findMissingNumber([1, 2, 3, 4, 5])); 
+findMissingNumber([1, 2, 3, 4, 5]);
