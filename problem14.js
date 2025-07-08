@@ -12,7 +12,7 @@ function printTriangle(rows) {
     }
 }
 
-// Ex
+// Ex:
 let userInput = 5;
 printTriangle(userInput);
 
