@@ -13,6 +13,5 @@ function printTriangle(rows) {
 }
 
 // Ex:
-let userInput = 5;
-printTriangle(userInput);
+printTriangle(10);
 
