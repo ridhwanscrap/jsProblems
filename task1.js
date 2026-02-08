@@ -3,11 +3,11 @@
 let temp = 30;
 function tempConvert(temp) {
     let b;
-    b = ((temp*1.80)+32);
+    b = ((temp * 1.80) + 32);
     return b;
 }
 console.log(tempConvert(temp)); //output 86
- 
+
 
 // You are given an array of numbers. Count how many times the a number is repeated in the array.
 
@@ -26,31 +26,31 @@ console.log(tempConvert(temp)); //output 86
 
 // output: 0
 
-let arr1 = [5,6,11,12,98, 5];
+let arr1 = [5, 6, 11, 12, 98, 5];
 
-let arr2 =  [5,6,11,12,98, 5];
+let arr2 = [5, 6, 11, 12, 98, 5];
 
 function repeated(arr, target) {
 
-    let count =0;
+    let count = 0;
 
-    for(i=0; i<arr.length; i++){
-        if(arr[i] == target) {
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] == target) {
             count++;
         }
     }
     return count;
 }
 
-console.log(repeated(arr1,5));
+console.log(repeated(arr1, 5));
 
-console.log(repeated(arr2,25));
+console.log(repeated(arr2, 25));
 
 
 // Write a function to count the number of vowels in a string.
 
 
-function countVowels(str){
+function countVowels(str) {
 
     let vowels = ["a", 'e', 'i', 'o', 'u'];
     return str
@@ -76,8 +76,26 @@ function longestWord(str) {
     }, "");
 }
 
-const input = "I am learning Programming to become a programmer";
-console.log(findLongestWord(input)); // Output: Programming
+// const input = "I am learning Programming to become a programmer";
+// console.log(findLongestWord(input));
+//  // Output: Programming
 
 
+// free drinks 
+// -burgut more than 500tk: free coke 
+// -else coke 30tk
+
+
+let totalPrice = 650;
+let drinkPrice;
+
+if (totalPrice >= 500) {
+    drinkPrice = 0;
+    console.log("Drinks free");
+} else {
+    drinkPrice = 30;
+    console.log("Drink price 30")
+}
+
+console.log(`Total bill: ${drinkPrice}`)
 
